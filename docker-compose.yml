@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  healthcare-knowledge-assistant:
+    build: .
+    container_name: healthcare-knowledge-assistant
+    ports:
+      - "8000:8000"
+    environment:
+      - API_KEY=${API_KEY:-dev-secret-key-12345}
+    volumes:
+      - ./storage:/app/storage
+      - ./logs:/app/logs
+    restart: unless-stopped

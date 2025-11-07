@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+storage/faiss_index/*
+!storage/faiss_index/.gitkeep
+storage/metadata.json
+storage/*.pkl
+storage/*.bin
+logs/*
+!logs/.gitkeep
+*.log
+.env.local
+.env.production
+.env
+*.pdf
